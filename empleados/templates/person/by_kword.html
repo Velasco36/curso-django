@@ -1,0 +1,16 @@
+<h1> search employee to kword</h1>
+<form method="GET">{% csrf_token %}
+    <input type="Text" id = "Kword" name = "kword" placeholder = "enter name here">
+    <button type="submit">search</button>
+
+</form>
+
+<h3> List Result</h3>
+<ul> 
+
+    {% for e in employee %}
+        <li>{{e}}</li>
+
+    {% endfor %}
+
+</ul>

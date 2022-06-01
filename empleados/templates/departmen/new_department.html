@@ -1,0 +1,22 @@
+<h1> Test one </h1>
+
+
+<form method="POST">{% csrf_token %}
+  
+    <h3> employee data</h3>
+    <p>
+        {{form.name}}
+    </p>
+    <p>
+        {{form.last_name}}
+    </p>
+    <h3> Department data</h3>
+    <p>
+        {{form.department}}
+    </p>
+    <p>
+        {{form.shorname}}
+    </p>
+    <button type="submit">SAVE</button>
+</form>
+    
